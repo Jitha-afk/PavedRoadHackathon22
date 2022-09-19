@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img src="../Images/logo-graphicbg.gif" alt="Hackathon2022"></a>
+ <img src="../../Images/logo-graphicbg.gif" alt="Hackathon2022"></a>
 </p>
 <h3 align="center">Paved Road for Developers:<br>Secure Development Framework</h3>
 
