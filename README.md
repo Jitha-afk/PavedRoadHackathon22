@@ -104,16 +104,14 @@ until finished
 *Add notes about how to use the system.*
 
 ## ⛏️ Built With <a name = "tech_stack"></a>
-- [MongoDB](https://www.mongodb.com/) - Database
-- [Express](https://expressjs.com/) - Server Framework
-- [VueJs](https://vuejs.org/) - Web Framework
-- [NodeJs](https://nodejs.org/en/) - Server Environment
+- [Visual Studio](https://visualstudio.microsoft.com/) - Code Templates
 
 ## ✍️ Team <a name = "authors"></a>
     
 - [@Abhijit Anurag](https://github.com/abhijitanurag)
 - [@Amresh Deochake](https://github.com/amdeocha)
 - [@Jitesh Thakur](https://github.com/Jitha-afk)
+- [@Mohammed Tanveer](https://github.com/threatpointer)
 - [@Prasada Rao Meegada](meegada.prasada@microsoft.com)
 - [@Rakesh Shukla](shuklarakesh@microsoft.com)
 - [@Saurabh Mudgal](https://github.com/smudgal05)
