@@ -78,7 +78,7 @@ Items that this project will be able to achieve in the future as not all items c
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 *These instructions will get you a copy of the project up and running on your local machine for development 
-and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.*
+and testing purposes.
 
 ### Prerequisites
 
