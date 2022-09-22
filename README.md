@@ -93,13 +93,39 @@ What things you need to install the software and how to install them.
 - Step 2: Copy the Zip file from `Content` folder and paste it to Project Templates folder.
   - `C:\Users\<user>\Documents\Visual Studio 2022\Templates\ProjectTemplates`
 - Select the Project Template `Name` and load it onto your project.
-  - ![IMG]()
+
+![template Preview](Images/template.png)
 
 ## 🎈 Usage <a name="usage"></a>
 
-- Once the template is loaded, set the type to `JWT`
-  
-  ![Image here]()
+Sample `appsettings.json`
+
+```json
+{
+  "AzureAd": {
+    "Instance": "https://login.microsoftonline.com/",
+    "Domain": "microsoft.onmicrosoft.com",
+    "TenantId": "<My Tenant ID>",
+    "ClientId": "<My client ID>",
+    "CallbackPath": "/signin-oidc",
+    "Scopes": "access_as_user",
+
+    "ValidIssuers": [ "MyValidTenant1", "MyValidTenant2" ],
+
+    "Type": "JWT",
+
+    "IncludeMoreTenants": "false",
+    "AdditionalTenants": [ "MyValidTenant1", "MyValidTenant2" ]
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*"
+}
+```
 
 ## ⛏️ Built With <a name = "tech_stack"></a>
 - [Visual Studio](https://visualstudio.microsoft.com/) - Code Templates
