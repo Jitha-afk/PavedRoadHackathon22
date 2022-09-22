@@ -92,9 +92,9 @@ What things you need to install the software and how to install them.
 - Step 1: Clone the repo `git clone https://github.com/Jitha-afk/Hackathon22.git`
 - Step 2: Copy the Zip file from `Content` folder and paste it to Project Templates folder.
   - `C:\Users\<user>\Documents\Visual Studio 2022\Templates\ProjectTemplates`
-- Select the Project Template `Name` and load it onto your project.
+- Select the Project Template `Security Certified` and load it onto your project.
 
-![template Preview](Images/template.png)
+![Template Preview](Images/template.png)
 
 ## 🎈 Usage <a name="usage"></a>
 
