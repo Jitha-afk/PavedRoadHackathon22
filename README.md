@@ -78,7 +78,7 @@ Items that this project will be able to achieve in the future as not all items c
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 *These instructions will get you a copy of the project up and running on your local machine for development 
-and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.*
+and testing purposes.*
 
 ### Prerequisites
 
@@ -92,14 +92,40 @@ What things you need to install the software and how to install them.
 - Step 1: Clone the repo `git clone https://github.com/Jitha-afk/Hackathon22.git`
 - Step 2: Copy the Zip file from `Content` folder and paste it to Project Templates folder.
   - `C:\Users\<user>\Documents\Visual Studio 2022\Templates\ProjectTemplates`
-- Select the Project Template `Name` and load it onto your project.
-  - ![IMG]()
+- Select the Project Template `Security Certified` and load it onto your project.
+
+![Template Preview](Images/template.png)
 
 ## 🎈 Usage <a name="usage"></a>
 
-- Once the template is loaded, set the type to `JWT`
-  
-  ![Image here]()
+Sample `appsettings.json`
+
+```json
+{
+  "AzureAd": {
+    "Instance": "https://login.microsoftonline.com/",
+    "Domain": "microsoft.onmicrosoft.com",
+    "TenantId": "<My Tenant ID>",
+    "ClientId": "<My client ID>",
+    "CallbackPath": "/signin-oidc",
+    "Scopes": "access_as_user",
+
+    "ValidIssuers": [ "MyValidTenant1", "MyValidTenant2" ],
+
+    "Type": "JWT",
+
+    "IncludeMoreTenants": "false",
+    "AdditionalTenants": [ "MyValidTenant1", "MyValidTenant2" ]
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*"
+}
+```
 
 ## ⛏️ Built With <a name = "tech_stack"></a>
 - [Visual Studio](https://visualstudio.microsoft.com/) - Code Templates
