@@ -37,19 +37,21 @@
 ## 🧐 Problem Statement <a name = "problem_statement"></a>
 Microsoft distributes software and operating system to billions of customers across the globe. A key contributor to Microsoft’s success is the trust that we have built with our customers by continuously improving the security posture of our products. Developers within Microsoft understand the importance of writing secure code and following continuous Security Development Lifecycle but they spend huge amount of time in keeping their code secure. On top, there are numerous reactive controls from build to post release which validate and flag security gaps. Mitigation of these gaps needs rework and developer bandwidth which is counterproductive. Secure Development Framework (SDF) aims to provide a paved road approach to developers with highly configurable and reusable code libraries / packages / Plugins for various security scenarios. This effort is aimed at providing a Secure Development Framework, which developers can start using right from the Design Phase of SDL.
 
-- IDEAL: *This section is used to describe the desired or “to be” state of the process or product. At large, this section should illustrate what the expected environment would look like once the solution is implemented.*
-- REALITY: *This section is used to describe the current or “as is” state of the process or product.*
-- CONSEQUENCES/IMPACT: *This section is used to describe the impacts on the business if the problem is not fixed or improved upon. This includes costs associated with loss of money, time, productivity, competitive advantage, and so forth.*
+- IDEAL: Enable all developer teams working on building a product/ application/ tool to adopt this framework in order to avoid common security pitfalls also easing the job.
+- REALITY: Various security engagements like AppSec, Threat Modelling, Red/Purple Team engagements have led to findings that are most common amongst developer teams such as:
+  - Lack of Authentication (APIs, Function Apps, Internal calls, etc)
+  - Incorrect Authentication (No token validation, use of self-signed certs, use of outdated/unverified libraries and protocols, etc)
+  - Configuration flaws with an existing solution like MSAL, ADAL.
+  - Missing or weak Authorization checks (No claim validation, bad string comparisons, business logic flaws, etc)
+- IMPACT:
   - Reduces cognitive load and time for developers to implement security in code allowing them to focus on business logic, solving problems and innovate rather than trying to determine if a vulnerability exists due to different code implementation practices.
   - Reduces load on build and post release validations rather these controls can focus on above baseline vulnerabilities. 
   - Code is secure by birth and stays secure as Born Secure Coding Framework makes continuous improvements.
 
 ## 💡 Idea / Solution <a name = "idea"></a>
-*This section is used to describe potential solutions.*
-*Once the ideal, reality, and consequences sections have been 
-completed, and understood, it becomes easier to provide a solution for solving the problem.*
+For the duration of this Hackathon, the team will be focused on delivering:
 
-- - - ### Project template imbibed with Authentication
+- - - ### Project template verified and approved by EDGSecurity
         Several predefined project templates are installed with Visual Studio. These templates, such as the ASP.NET Web Application, Console application and Class Library templates, are available to choose from when you create a new project.
         
         The proposal is to create a new template(s) that can be installed as add-ons with visual studio which has authentication implementation in place. First release, will be targeted towards ASP.Net Core Web API, ASP.Net Core Web App which are most frequently used, and authentication and authorization principles are most applicable.
@@ -58,19 +60,21 @@ completed, and understood, it becomes easier to provide a solution for solving t
         - Easy to use.  
         - The groundwork needed to create a new project template is well tried and tested and also recommended by the Visual Studio team.
         - No worry about maintaining multiple versions. If any NuGets are used in the template, the versioning task falls on the NuGet package owners and not on the templates. Hence easy to maintain.
-        - No learning curve for the end user to use. 
-        - No separate documentation is needed as the code can contain elaborate comments. 
-        - The same template can have all the recommended authentication mechanisms. 
+        - No learning curve for the end user to use.
+        - No separate documentation is needed as the code can contain elaborate comments.
+        - The same template can have all the recommended authentication mechanisms.
 
 ## ⛓️ Dependencies / Limitations <a name = "limitations"></a>
-- What are the dependencies of your project?
-- Describe each limitation in detailed but concise terms
-- Explain why each limitation exists
-- Provide the reasons why each limitation could not be overcome using the method(s) chosen to acquire.
-- Assess the impact of each limitation in relation to the overall findings and conclusions of your project, and if appropriate, describe how these limitations could point to the need for further research.
+
+- Currently the template is provisioned for C# .NET Core 6.0 Framework only. (Hack week)
 
 ## 🚀 Future Scope <a name = "future_scope"></a>
-*Write about what you could not develop during the course of the Hackathon; and about what the project can achieve in the future.*
+
+Items that this project will be able to achieve in the future as not all items could be developed during the course of the Hackathon;
+
+- Support for multiple types of projects (in Visual Studio).
+- Support for other languages.
+- Additional security areas covered for micro-services on Azure (service fabric or AKS, Defender, telemetry), Trusted cypto modules (Windows, Linux, Mobile), API security services, AutN & AuthZ integration.
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 *These instructions will get you a copy of the project up and running on your local machine for development 
@@ -80,28 +84,22 @@ and testing purposes. See [deployment](#deployment) for notes on how to deploy t
 
 What things you need to install the software and how to install them.
 
-```
-Give examples
-```
+1. [Microsoft Visual Studio](https://visualstudio.microsoft.com/downloads/)
+2. Template from this repo.
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running.
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
+- Step 1: Clone the repo `git clone https://github.com/Jitha-afk/Hackathon22.git`
+- Step 2: Copy the Zip file from `Content` folder and paste it to Project Templates folder.
+  - `C:\Users\<user>\Documents\Visual Studio 2022\Templates\ProjectTemplates`
+- Select the Project Template `Name` and load it onto your project.
+  - ![IMG]()
 
 ## 🎈 Usage <a name="usage"></a>
-*Add notes about how to use the system.*
+
+- Once the template is loaded, set the type to `JWT`
+  
+  ![Image here]()
 
 ## ⛏️ Built With <a name = "tech_stack"></a>
 - [Visual Studio](https://visualstudio.microsoft.com/) - Code Templates
